@@ -1,0 +1,237 @@
+*{/* Reset - Receita de bolo para colocar em todos os projetos; */
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+} 
+h2{
+    font-size: 17px;
+    font-style:italic;
+    font-weight: normal;
+}
+.texte{ /* Classe CSS */
+    color: red;
+}
+#texte{/* Id javascript */
+    color: green;
+}
+.paragrafo{
+    font-size: 30px;
+}
+/*[name=paragrafo]{ Atributo personalisado 
+    color: blue;
+}*/
+/* ------------------------------------------------------------------- */
+[name]{/* Atributo personalisado */
+    color: yellow;
+}
+div{
+    background-color: #fff;
+}
+h2{
+    color: rgb(0,0,200);
+}
+.bg{
+    width: 100%;
+    height: 400px;
+    background-image: url('../landscape.jpg');
+    background-repeat: no-repeat;
+    background-color: cyan;
+    background-position: center;
+    background-size: cover; /* Cobrir */
+    
+}
+
+/* ------------------------------------------------------------------- */
+.container{
+    display: flex;
+    /* flex-direction: column;row - padrão um do lado do outro, coluna - um abaixo do outro */
+    /* align-items: center; alinhando ao centro um abaixo do outro*/
+    flex-wrap: wrap; /*nowrap - padrão um do lado do outro, wrap cada um ocupa sua width original */
+}
+.d1{
+    width: 100%;
+    height: 300px;
+    background-color:blue;
+}
+.d2{
+    width: 50%;
+    height: 300px;
+    background-color:red;
+}
+.d3{
+    width: 50%;
+    height: 300px;
+    background-color:green;
+}
+/* ------------------------------------------------------------------- */
+
+h2{
+    color: red;
+}
+h2.title {
+    color: green;
+}
+.teste h2.title{
+    color:rgb(255, 208, 0);
+}
+.teste > .testes2 > h2.title{
+    color:blue;
+}
+h2{
+    color: burlywood !important;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+@keyframes anim1{
+    from{background-color: green;}
+    to{background-color: red;}
+}
+.teste {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+@keyframes anim1{
+    from{background-color: green;width: 400px;}
+    to{background-color: red;width: 2px;}
+}
+.teste {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1{
+    0%{background-color: green;}
+    50%{background-color: red;}
+    100%{background-color: blue;}
+}
+.teste {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* ------------------------------------------------------------------- */
+body{
+    background-color: #272620;
+}
+.form {
+    text-align: center;
+    padding: 20px;
+}
+.form img{
+    max-width: 300px;
+    width: 100%;
+}
+.form input[type=text],
+.form input[type=email]{
+    padding-left: 10px;
+    display: block;
+    border-radius: 20px;
+    margin: 10px auto;
+    font-size: 16px;
+    max-width: 500px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+.form textarea{
+    padding:10px;
+    resize: vertical;
+    display:block;
+    border-radius: 20px;
+    margin: 10px auto;
+    font-size: 16px;
+    max-width: 500px;
+    width: 100%;
+    height: 120px;
+}
+.form input[type=submit]{
+    padding-left: 10px;
+    display: block;
+    border-radius: 20px;
+    margin: 10px auto;
+    font: 16px;
+    max-width: 500px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: cornflowerblue;
+    height: 35px;
+    border: 0;
+}
+
+/* ------------------------------------------------------------------- */
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: cyan;
+}
+@media screen and (max-width:768px) {
+    .box{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .box{
+        background-color: red;
+    }
+}
+/* ------------------------------------------------------------------- */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1{
+    width: 500px;
+    border: 1px solid black;
+    height: 500px;
+    background-color: cyan;
+}
+@media screen and (min-width:768px) {
+    .box1{
+        width: 33.33%;
+    }
+}
+/* ------------------------------------------------------------------- */
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wraper .img{width:25%}
+img{
+    max-width: 100%;
+}
+@media screen and (max-width: 1024px){
+    .wraper .img{
+        width: 33.3%;
+    }
+}
+@media screen and (max-width: 768px){
+    .wraper .img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 580px){
+    .wraper .img{
+        width: 100%;
+    }
+}
